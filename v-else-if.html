@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 日本語 -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+	<h1>条件により表示を制御する(v-else-if) </h1>
+	<hr />
+	<!-- -->
+	<div id="app-106">
+		<input type="radio" name="app106-type" onclick="app106.type='A'" checked>
+		<input type="radio" name="app106-type" onclick="app106.type='B'">
+		<input type="radio" name="app106-type" onclick="app106.type='C'">
+		<span v-if="type=='A'">Good morning.</span>
+		<span v-else-if="type=='B'">Hello!</span>
+		<span v-else>Bye!</span>
+	</div>
+<script>
+var app106 = new Vue({
+  el: '#app-106',
+  data: { type: 'A' }
+})
+</script></body>
+</html>

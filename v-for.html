@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 日本語 -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+	<h1>ループする(v-for) </h1>
+	<hr />
+	<!-- -->
+	<div id="app-107">
+		<ul>
+		<li v-for="color in colorList">{{ color }}</li>
+		</ul>
+	</div>
+<script>
+var app107 = new Vue({
+  el: '#app-107',
+  data: { colorList: [ 'Red', 'Green', 'Blue' ] }
+})
+</script>
+</body>
+</html>

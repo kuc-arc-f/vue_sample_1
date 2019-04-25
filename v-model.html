@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 日本語 -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+	<h1>入力フォームにモデルを割り当てる(v-model) </h1>
+	<hr />
+	<!-- -->
+	<div id="app-120">
+		<input v-model="message">
+		<div>Message: {{ message }}</div>
+	</div>
+<script>
+var app120 = new Vue({
+  el: '#app-120',
+  data: { message: 'Hello!' }
+})
+</script>
+</body>
+</html>

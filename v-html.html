@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 日本語 -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+	<h1>HTMLをレンダリングする(v-html)</h1>
+	<hr />
+	<div id="app-102">
+		<div v-text="message"></div>    <!-- 置換される -->
+		<div v-html="message"></div>    <!-- 置換されない -->
+	</div>
+	<script>
+	var app102 = new Vue({
+		el: '#app-102',
+		data: { message: '<b>Hello!</b>' }
+	})
+	</script>
+</body>
+</html>

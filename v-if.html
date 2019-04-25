@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 日本語 -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+	<h1>条件により表示を制御する(v-if)</h1>
+	<hr />
+	<div id="app-104">
+		<input type="checkbox" @click="change" checked>
+		<span v-if="seen">Hello!</span>
+	</div>
+<script>
+var app104 = new Vue({
+  el: '#app-104',
+  data: { seen: true },
+  methods: {
+    change: function(e) {
+      this.seen = e.target.checked
+    }
+  }
+})
+</script>
+</body>
+</html>

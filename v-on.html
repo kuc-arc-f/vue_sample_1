@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 日本語 -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+	<h1>イベントを処理する(v-on, @) </h1>
+	<hr />
+	<!-- -->
+	<div id="app-108">
+		<button v-on:click="hello">Hello</button>
+		<button @click="hello">Hello</button>
+	</div>
+<script>
+var app108 = new Vue({
+  el: '#app-108',
+  methods: {
+    hello: function() {
+      alert("Hello!");
+    }
+  }
+})
+</script>
+</body>
+</html>
